@@ -28,10 +28,9 @@ load_dotenv(find_dotenv())
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = int(os.environ['DEBUG'])
 
-ALLOWED_HOSTS = ["fickle-genpasswords.tk", "188.68.223.111", "localhost"]
-
+ALLOWED_HOSTS = os.environ['ALLOWED_HOSTS'].split()
 
 # Application definition
 
