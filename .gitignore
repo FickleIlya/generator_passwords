@@ -110,7 +110,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
+/code/venv
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -131,5 +131,7 @@ dmypy.json
 .idea
 /code/static
 #etc
-
+/certbot
+/nginx/conf.d
+/nginx/dhparam
 !.gitignore
